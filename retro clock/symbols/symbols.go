@@ -11,11 +11,11 @@ var zero = symbol{
 }
 
 var one = symbol{
+	"██ ",
 	" █ ",
 	" █ ",
 	" █ ",
-	" █ ",
-	" █ ",
+	"███",
 }
 
 var two = symbol{
@@ -61,7 +61,7 @@ var six = symbol{
 var seven = symbol{
 	"███",
 	"  █",
-	"███",
+	" ██",
 	"  █",
 	"  █",
 }
