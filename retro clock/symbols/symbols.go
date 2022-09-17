@@ -84,7 +84,7 @@ var nine = symbol{
 
 var colon = symbol{
 	"   ",
-	" █",
+	" █ ",
 	"   ",
 	" █ ",
 	"   ",
