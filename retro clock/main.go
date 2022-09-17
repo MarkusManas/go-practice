@@ -4,6 +4,8 @@ import (
 	"clock/symbols"
 	"fmt"
 	"time"
+
+	"github.com/inancgumus/screen"
 )
 
 func ComputeTime(n int) (int, int, int) {
@@ -19,15 +21,17 @@ func getCurrentSeconds(t time.Time) int {
 }
 
 func main() {
+	screen.Clear()
 	var h, m, s int
 
 	cs := getCurrentSeconds(time.Now())
 	for {
+		screen.MoveTopLeft()
 		h, m, s = ComputeTime(cs)
 		time_symbols := symbols.ConvertTimeToSymbols(h, m, s)
 		symbols.PrintClock(time_symbols)
 		cs++
-		time.Sleep(1 * time.Second)
 		fmt.Println()
+		time.Sleep(1 * time.Second)
 	}
 }
